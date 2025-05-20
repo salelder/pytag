@@ -55,19 +55,21 @@ The library handles several special cases for attribute names:
 4. ARIA Attributes:
    - `aria_*` attributes are automatically converted (e.g., `aria_label` → `aria-label`)
 
-## Dynamic Tag Creation
+## Nonstandard Tag Creation
 
-You can create any HTML tag using the `Tags` factory:
+Although we have attempted to include all supported HTML tags, you may wish to define other, nonstandard tags.
+You can create any tag using the `Tag` class:
 
 ```python
-from pytag import Tags
+from pytag import Tag
 
-# Create any HTML tag
-html = Tags.article(
-    Tags.h1("My Article"),
-    Tags.p("Some content..."),
+# Create a nonstandard tag
+bogus = Tag("bogus", "Hello, world!",
     cls="blog-post"
 ).render()
+
+print(bogus)
+# <bogus class="blog-post">Hello, world!</bogus>
 ```
 
 ## License
