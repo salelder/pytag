@@ -4,7 +4,8 @@ A minimal Python library for programmatic HTML generation. PyTag prioritizes cle
 
 ## Features
 
-- Simple, readable API: `Div(...)`, `Button(...)`, or `tags.Div(...)`
+- Simple, readable API: `Div(*children, **attributes)`, `Button(*children, **attributes)`, etc.
+- For example, `Div("Hello, world", cls = "blog-post").render()` results in `'<div class="blog-post">Hello, world</div>'`
 - Automatic conversion of underscores to hyphens in attribute names (e.g., `hx_get` → `hx-get`)
 - Special handling of reserved words (e.g., `cls` → `class`, `fr` → `for`)
 - Lightweight, no dependencies
@@ -19,7 +20,7 @@ pip install pytag
 ## Quick Start
 
 ```python
-from pytag import Div, Button, Span
+from pytag.tags import Div, Button, Span
 
 # Create HTML elements
 html = Div(
@@ -71,6 +72,17 @@ bogus = Tag("bogus", "Hello, world!",
 print(bogus)
 # <bogus class="blog-post">Hello, world!</bogus>
 ```
+
+## Why PyTag?
+PyTag is for users who prefer to generate HTML directly in Python rather than with JavaScript or HTML templating libraries.
+
+It complements HTMX nicely and was built for that purpose.
+
+It is similar to the `Dominate` package, but with slightly nicer syntax (capitalized tag classes,
+automatic conversion of underscores to hyphens).
+
+The FastHTML library was another major inspiration. In fact, the syntax is stolen from FastHTML. This library, however,
+provides just the HTML generation without wrapping server functionality.
 
 ## License
 
