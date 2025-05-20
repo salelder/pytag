@@ -56,13 +56,3 @@ class Tag:
         )
 
         return f"<{self.name}{attrs_html}>{inner_html}</{self.name}>"
-
-
-class TagsFactory:
-    """Factory for creating HTML tags dynamically."""
-    def __getattr__(self, tag_name):
-        return lambda *children, **attrs: Tag(tag_name.lower(), *children, **attrs)
-
-
-# Create the Tags instance
-Tags = TagsFactory() 
