@@ -1,6 +1,6 @@
 # PyTag
 
-A minimal Python library for programmatic HTML generation. PyTag prioritizes clean, Pythonic syntax and works seamlessly with server-driven web architectures (FastAPI, HTMX).
+A minimal Python library for programmatic HTML generation. PyTag uses very simple, Pythonic syntax and pairs well with server-driven web architectures (FastAPI, HTMX).
 
 ## Features
 
