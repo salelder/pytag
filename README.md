@@ -13,9 +13,7 @@ A minimal Python library for programmatic HTML generation. PyTag prioritizes cle
 
 ## Installation
 
-```bash
-pip install pytag
-```
+Pip and conda coming soon; for now clone the repo and add `pytag` (the outer directory) to your `PYTHONPATH`.
 
 ## Quick Start
 
