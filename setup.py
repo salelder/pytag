@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="pytag",
     version="0.1.0",
-    author="PyTag Contributors",
-    author_email="your.email@example.com",
+    author="Sal Elder",
+    author_email="sal@salelder.com",
     description="A minimal Python library for programmatic HTML generation",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/pytag",
+    url="https://github.com/salelder/pytag",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",

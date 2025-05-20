@@ -1,0 +1,5 @@
+include README.md
+include UNLICENSE
+include LICENSE
+include meta.yaml
+recursive-include pytag *.py 
