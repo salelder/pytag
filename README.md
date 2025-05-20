@@ -4,7 +4,7 @@ A minimal Python library for programmatic HTML generation. PyTag prioritizes cle
 
 ## Features
 
-- Simple, readable API: `Div(*children, **attributes)`, `Button(*children, **attributes)`, etc.
+- Simple API mirroring the HTML: `Div(...)`, `Button(...)`, etc.
 - For example, `Div("Hello, world", cls = "blog-post").render()` results in `'<div class="blog-post">Hello, world</div>'`
 - Automatic conversion of underscores to hyphens in attribute names (e.g., `hx_get` → `hx-get`)
 - Special handling of reserved words (e.g., `cls` → `class`, `fr` → `for`)
