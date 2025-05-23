@@ -8,8 +8,8 @@ class Tag:
         'async_': 'async'
     }
 
-    def __init__(self, name, *children, **attrs):
-        self.name = name
+    def __init__(self, tag_name, *children, **attrs):
+        self.name = tag_name
         self.children = children
         self.attrs = self._process_attrs(attrs)
 
