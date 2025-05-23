@@ -34,6 +34,12 @@ class Tag:
             processed[key] = value
             
         return processed
+    
+    def add(self, *children):
+        """
+        Add children, also of class Tag,to the tag.
+        """
+        self.children.extend(children)
 
     def render(self):
         """Render the tag and its children as HTML."""
