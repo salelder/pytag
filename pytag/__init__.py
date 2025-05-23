@@ -1,5 +1,5 @@
-from .core import Tag, Tags
-from .tags import *
+from .core import Tag
+from . import tags
 
 __version__ = "0.1.0"
 
