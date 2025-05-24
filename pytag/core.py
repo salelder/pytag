@@ -10,7 +10,7 @@ class Tag:
 
     def __init__(self, tag_name, *children, **attrs):
         self.name = tag_name
-        self.children = children
+        self.children = list(children)
         self.attrs = self._process_attrs(attrs)
 
     def _process_attrs(self, attrs):
